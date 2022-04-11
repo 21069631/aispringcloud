@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: configclient
+  profiles:
+    active: dev  #name+active结合进行配置文件寻找通过短横线进行连接
+  cloud:
+    config:
+      uri:  http://localhost:8762   #配置寻找路径
+      fail-fast: true
